@@ -13,6 +13,7 @@
 		42153AC022F1C496007F1B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42153ABF22F1C496007F1B4F /* Assets.xcassets */; };
 		42153AC322F1C496007F1B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42153AC122F1C496007F1B4F /* LaunchScreen.storyboard */; };
 		42153AC622F1C496007F1B4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153AC522F1C496007F1B4F /* main.m */; };
+		B2979357F07C385779FAD368 /* libPods-CXScanningIDCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		42153AC222F1C496007F1B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42153AC422F1C496007F1B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42153AC522F1C496007F1B4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CXScanningIDCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD873A940D4AAAF8808C624 /* Pods-CXScanningIDCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXScanningIDCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard.release.xcconfig"; sourceTree = "<group>"; };
+		F8C0B902A4DCDAE0234277F1 /* Pods-CXScanningIDCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXScanningIDCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2979357F07C385779FAD368 /* libPods-CXScanningIDCard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15993EDCCE8CFFEA0C89DD5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0B902A4DCDAE0234277F1 /* Pods-CXScanningIDCard.debug.xcconfig */,
+				DFD873A940D4AAAF8808C624 /* Pods-CXScanningIDCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		42153AAA22F1C494007F1B4F = {
 			isa = PBXGroup;
 			children = (
 				42153AB522F1C494007F1B4F /* CXScanningIDCard */,
 				42153AB422F1C494007F1B4F /* Products */,
+				15993EDCCE8CFFEA0C89DD5F /* Pods */,
+				AF8533BD1C69503B110323DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = CXScanningIDCard;
 			sourceTree = "<group>";
 		};
+		AF8533BD1C69503B110323DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42153AC922F1C496007F1B4F /* Build configuration list for PBXNativeTarget "CXScanningIDCard" */;
 			buildPhases = (
+				F3B1293CFD8AABC73C28AF4A /* [CP] Check Pods Manifest.lock */,
 				42153AAF22F1C494007F1B4F /* Sources */,
 				42153AB022F1C494007F1B4F /* Frameworks */,
 				42153AB122F1C494007F1B4F /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3B1293CFD8AABC73C28AF4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CXScanningIDCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42153AAF22F1C494007F1B4F /* Sources */ = {
@@ -283,6 +329,7 @@
 		};
 		42153ACA22F1C496007F1B4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C0B902A4DCDAE0234277F1 /* Pods-CXScanningIDCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +347,7 @@
 		};
 		42153ACB22F1C496007F1B4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD873A940D4AAAF8808C624 /* Pods-CXScanningIDCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

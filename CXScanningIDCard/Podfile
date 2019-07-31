@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'CXScanningIDCard' do
+
+pod 'YYKit'
+
+end
