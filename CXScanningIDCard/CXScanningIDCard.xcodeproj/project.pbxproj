@@ -13,7 +13,13 @@
 		42153AC022F1C496007F1B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42153ABF22F1C496007F1B4F /* Assets.xcassets */; };
 		42153AC322F1C496007F1B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42153AC122F1C496007F1B4F /* LaunchScreen.storyboard */; };
 		42153AC622F1C496007F1B4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153AC522F1C496007F1B4F /* main.m */; };
-		B2979357F07C385779FAD368 /* libPods-CXScanningIDCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */; };
+		42153ACE22F1D5F4007F1B4F /* CXScanningCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153ACD22F1D5F4007F1B4F /* CXScanningCardVC.m */; };
+		42153AD122F1D78B007F1B4F /* CXCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153AD022F1D78B007F1B4F /* CXCardModel.m */; };
+		42153AD922F2C602007F1B4F /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42153AD422F2C602007F1B4F /* libexidcardios.a */; };
+		42153ADA22F2C602007F1B4F /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 42153AD622F2C602007F1B4F /* zocr0.lib */; };
+		42153ADD22F2E198007F1B4F /* CXIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153ADC22F2E198007F1B4F /* CXIDCardScaningView.m */; };
+		42153AE022F325E7007F1B4F /* CXCardInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42153ADF22F325E7007F1B4F /* CXCardInfoVC.m */; };
+		95A725D32F2E4D6A72CA1AA5 /* Pods_CXScanningIDCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6805409E68E4DE48ED14214F /* Pods_CXScanningIDCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +33,19 @@
 		42153AC222F1C496007F1B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42153AC422F1C496007F1B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42153AC522F1C496007F1B4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CXScanningIDCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42153ACC22F1D5F4007F1B4F /* CXScanningCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXScanningCardVC.h; sourceTree = "<group>"; };
+		42153ACD22F1D5F4007F1B4F /* CXScanningCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXScanningCardVC.m; sourceTree = "<group>"; };
+		42153ACF22F1D78B007F1B4F /* CXCardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCardModel.h; sourceTree = "<group>"; };
+		42153AD022F1D78B007F1B4F /* CXCardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCardModel.m; sourceTree = "<group>"; };
+		42153AD422F2C602007F1B4F /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		42153AD622F2C602007F1B4F /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		42153AD722F2C602007F1B4F /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		42153AD822F2C602007F1B4F /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		42153ADB22F2E198007F1B4F /* CXIDCardScaningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXIDCardScaningView.h; sourceTree = "<group>"; };
+		42153ADC22F2E198007F1B4F /* CXIDCardScaningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXIDCardScaningView.m; sourceTree = "<group>"; };
+		42153ADE22F325E7007F1B4F /* CXCardInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCardInfoVC.h; sourceTree = "<group>"; };
+		42153ADF22F325E7007F1B4F /* CXCardInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCardInfoVC.m; sourceTree = "<group>"; };
+		6805409E68E4DE48ED14214F /* Pods_CXScanningIDCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXScanningIDCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD873A940D4AAAF8808C624 /* Pods-CXScanningIDCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXScanningIDCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard.release.xcconfig"; sourceTree = "<group>"; };
 		F8C0B902A4DCDAE0234277F1 /* Pods-CXScanningIDCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXScanningIDCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2979357F07C385779FAD368 /* libPods-CXScanningIDCard.a in Frameworks */,
+				95A725D32F2E4D6A72CA1AA5 /* Pods_CXScanningIDCard.framework in Frameworks */,
+				42153AD922F2C602007F1B4F /* libexidcardios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +102,50 @@
 				42153AC122F1C496007F1B4F /* LaunchScreen.storyboard */,
 				42153AC422F1C496007F1B4F /* Info.plist */,
 				42153AC522F1C496007F1B4F /* main.m */,
+				42153ACC22F1D5F4007F1B4F /* CXScanningCardVC.h */,
+				42153ACD22F1D5F4007F1B4F /* CXScanningCardVC.m */,
+				42153ACF22F1D78B007F1B4F /* CXCardModel.h */,
+				42153AD022F1D78B007F1B4F /* CXCardModel.m */,
+				42153ADB22F2E198007F1B4F /* CXIDCardScaningView.h */,
+				42153ADC22F2E198007F1B4F /* CXIDCardScaningView.m */,
+				42153ADE22F325E7007F1B4F /* CXCardInfoVC.h */,
+				42153ADF22F325E7007F1B4F /* CXCardInfoVC.m */,
+				42153AD222F2C602007F1B4F /* lib */,
 			);
 			path = CXScanningIDCard;
+			sourceTree = "<group>";
+		};
+		42153AD222F2C602007F1B4F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				42153AD322F2C602007F1B4F /* libexidcard */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		42153AD322F2C602007F1B4F /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				42153AD422F2C602007F1B4F /* libexidcardios.a */,
+				42153AD522F2C602007F1B4F /* dicts */,
+				42153AD722F2C602007F1B4F /* commondef.h */,
+				42153AD822F2C602007F1B4F /* excards.h */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		42153AD522F2C602007F1B4F /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				42153AD622F2C602007F1B4F /* zocr0.lib */,
+			);
+			path = dicts;
 			sourceTree = "<group>";
 		};
 		AF8533BD1C69503B110323DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62E2C52C102B45399AE15C13 /* libPods-CXScanningIDCard.a */,
+				6805409E68E4DE48ED14214F /* Pods_CXScanningIDCard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +161,7 @@
 				42153AAF22F1C494007F1B4F /* Sources */,
 				42153AB022F1C494007F1B4F /* Frameworks */,
 				42153AB122F1C494007F1B4F /* Resources */,
+				79B96C1A315DA5DD0CB68608 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42153ADA22F2C602007F1B4F /* zocr0.lib in Resources */,
 				42153AC322F1C496007F1B4F /* LaunchScreen.storyboard in Resources */,
 				42153AC022F1C496007F1B4F /* Assets.xcassets in Resources */,
 				42153ABE22F1C494007F1B4F /* Main.storyboard in Resources */,
@@ -162,6 +219,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		79B96C1A315DA5DD0CB68608 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXScanningIDCard/Pods-CXScanningIDCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F3B1293CFD8AABC73C28AF4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,7 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42153ADD22F2E198007F1B4F /* CXIDCardScaningView.m in Sources */,
+				42153ACE22F1D5F4007F1B4F /* CXScanningCardVC.m in Sources */,
+				42153AD122F1D78B007F1B4F /* CXCardModel.m in Sources */,
 				42153ABB22F1C494007F1B4F /* ViewController.m in Sources */,
+				42153AE022F325E7007F1B4F /* CXCardInfoVC.m in Sources */,
 				42153AC622F1C496007F1B4F /* main.m in Sources */,
 				42153AB822F1C494007F1B4F /* AppDelegate.m in Sources */,
 			);
@@ -334,14 +413,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EK7V6K8XY3;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CXScanningIDCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXScanningIDCard/lib/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepu.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,14 +437,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EK7V6K8XY3;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CXScanningIDCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXScanningIDCard/lib/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepu.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
